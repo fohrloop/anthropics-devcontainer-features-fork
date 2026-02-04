@@ -134,12 +134,7 @@ main() {
 
     # Install Claude Code CLI
     install_claude_code || exit 1
-    
 }
 
 # Execute main function
 main
-
-# Add a post-install script
-install -d /usr/local/bin
-install -m 0755 ./link-claude-config.sh /usr/local/bin/link-claude-config
