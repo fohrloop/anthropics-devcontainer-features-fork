@@ -138,3 +138,7 @@ main() {
 
 # Execute main function
 main
+
+# Add the post-install script for persistent storage for Claude configuration
+install -d /usr/local/bin
+install -m 0755 ./link-claude-config.sh /usr/local/bin/link-claude-config
