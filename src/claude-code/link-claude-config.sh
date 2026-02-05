@@ -14,8 +14,8 @@ if [ -z "$home_dir" ]; then
   exit 0
 fi
 
-mkdir -p /claude-config
 mkdir -p "$home_dir"
 
 # Create/replace symlink: ~/.claude -> /claude-config
+echo "Creating symlink: $home_dir/.claude -> /claude-config" >&2
 ln -snf /claude-config "$home_dir/.claude"
